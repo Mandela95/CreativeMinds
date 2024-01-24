@@ -1,0 +1,321 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  box-sizing: border-box;
+  transition: .2s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.talkBtn {
+  background-color: #941225;
+  color: #fff;
+  width: 140px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.host {
+  background-color: #941225;
+  color: #fff;
+  width: 140px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  display: block;
+  margin: auto;
+  width: fit-content
+}
+
+.lang {
+  color: #000;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  top: 10px;
+  right: 10px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.fa-sun {
+  color: orange;
+  font-size: 25px;
+  text-shadow: 0px 0px 20px orange;
+  transform: translateX(25px);
+  transition: .3s;
+}
+
+.fa-moon {
+  color: #000;
+  font-size: 24px;
+  text-shadow: 0px 0px 20px white;
+  transform: translateX(0px);
+  opacity: 0;
+  transition: .3s;
+}
+
+#switch-button:checked~label>.fa-sun {
+  opacity: 0;
+}
+
+#switch-button:checked~label>.fa-moon {
+  opacity: 1;
+  transform: translateX(-25px);
+}
+
+#switch-button:checked~body {
+  background: black !important;
+  color: white;
+}
+
+
+/* start landing */
+.people {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.slogan {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  font-family: Space Grotesk;
+  margin: 15px;
+}
+
+.slogan span {
+  color: #49C3D3;
+  padding-right: 5px;
+  border-right: 2px solid #49C3D3;
+}
+
+.goal {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  color: #777;
+}
+
+.partner {
+  border-radius: 50%;
+}
+
+.target {
+  background-color: #1C344C;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  transform: rotate(4deg);
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* .ball {
+  position: absolute;
+} */
+
+.wordAround {
+  position: relative;
+}
+
+.wordAround svg {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.creative {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  top: 22%;
+}
+
+.statistics {
+  border-bottom: 1px solid #000;
+}
+
+.row {
+  text-align: center;
+  margin: 10px;
+}
+
+.row p {
+  color: #000;
+  font-weight: bold;
+}
+
+.row .number {
+  /* border: 1px solid #000; */
+  border-radius: 10px;
+}
+
+.number {
+  font-weight: bold;
+  color: #49C3D3;
+  font-size: 2rem;
+}
+
+.number p {
+  font-size: 1rem;
+  padding: 30px;
+}
+
+.number img {
+  width: 46px;
+  height: 46px;
+  margin: 30px auto;
+}
+
+.cardDesign:nth-child(2) {
+  background-color: #1C344C;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.cardDesign .number {
+  border-bottom: none;
+}
+
+.microphone img {
+  width: 100%;
+}
+
+.about {
+  text-align: left;
+}
+
+.about a {
+  display: block;
+}
+
+.check img {
+  margin-right: 5px;
+}
+
+.header {
+  color: #49C3D3;
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.develop {
+  text-transform: capitalize;
+  border-bottom: 3px solid #000;
+}
+
+.progItems:hover {
+  box-shadow: 0px 0px 8px 10px #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.box:hover {
+  background-color: #1C344C;
+  border-radius: 10px;
+}
+
+.portfolio {
+  background-image: url(../images/Rectangle\ 59.png);
+}
+
+.screen {
+  background-color: #19283f;
+}
+
+.subscribe {
+  background-image: url(../images/Rectangle\ 59.png);
+  background-repeat: round;
+}
+
+.testimonial {
+  background-color: #1C344C;
+  border: 5px solid #fff;
+  border-radius: 20px;
+}
+
+.subject {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.map,
+.building {
+  width: 100%;
+}
+
+li {
+  margin: 5px;
+}
+
+.icons svg {
+  margin: 5px;
+}
+
+.phone {
+  width: 100%;
+}
+
+
+
+/* scroll to top */
+
+.up {
+  position: fixed;
+  right: -40px;
+  bottom: 20px;
+  background: #49C3D3;
+  color: white;
+  padding: 7px 9px 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.up.show {
+  right: 20px;
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #49C3D3;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+
+  .navbar-brand,
+  .lang,
+  .talkBtn {
+    display: none;
+  }
+
+  .list li ul {
+    display: block;
+  }
+}
