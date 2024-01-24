@@ -17,21 +17,25 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar d-flex">
     <div class="container">
-      <a class="navbar-brand" href="">
-        <i class="fas fa-bars"></i>
-      </a>
-      <img class="col-lg-4" src="images/logo 1.png" alt="">
-      <a class="lang" href="">اللغة العربية <img src="images/translate.png" alt=""></a>
-      <a class="mode">
-        <input type="checkbox" id="switch-button">
-        <label for="switch-button">
-          <i class="fas fa-sun"></i>
-          <i class="fas fa-moon"></i>
-        </label>
-      </a>
-      <a class="talkBtn" href="#LETS TALK">LETS TALK <i class="far fa-arrow-alt-circle-right"></i></a>
+      <div class="left d-flex justify-content-between align-items-center w-50">
+        <a class="navbar-brand" href="">
+          <i class="fas fa-bars"></i>
+        </a>
+        <img class="col-lg-4" src="images/logo 1.png" alt="">
+      </div>
+      <div class="right d-flex justify-content-between align-items-center w-30">
+        <a class="lang" href="">اللغة العربية <img src="images/translate.png" alt=""></a>
+        <a class="mode m-2">
+          <input type="checkbox" id="switch-button">
+          <label for="switch-button">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </label>
+        </a>
+        <a class="talkBtn" href="#LETS TALK">LETS TALK <i class="far fa-arrow-alt-circle-right"></i></a>
+      </div>
     </div>
   </nav>
 
@@ -365,7 +369,7 @@
           <input class="w-100 p-2 text-light bg-transparent" type="text" placeholder="Enter Email Address">
         </div>
         <div class="col-lg-2 text-sm-center">
-          <a class="talkBtn btn rounded-pill d-flex">Subscribe Now </a>
+          <a class="talkBtn btn rounded-pill d-flex m-auto mt-2">Subscribe Now </a>
         </div>
       </form>
     </div>
