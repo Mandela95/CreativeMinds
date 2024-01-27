@@ -315,7 +315,8 @@ li {
     display: none;
   }
 
-  .list li ul {
-    display: block;
+  .list ul {
+    display: flex;
+    flex-direction: column;
   }
 }
