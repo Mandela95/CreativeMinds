@@ -116,16 +116,15 @@ label {
 .target {
   background-color: #1C344C;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-align: center;
   transform: rotate(4deg);
   padding: 15px;
   margin-top: 40px;
+  width: 100%;
+  text-transform: uppercase;
+  text-wrap: nowrap;
 }
-
-/* .ball {
-  position: absolute;
-} */
 
 .wordAround {
   position: relative;
@@ -159,7 +158,6 @@ label {
 }
 
 .row .number {
-  /* border: 1px solid #000; */
   border-radius: 10px;
 }
 
@@ -177,7 +175,6 @@ label {
 .number img {
   width: 46px;
   height: 46px;
-  margin: 30px auto;
 }
 
 .cardDesign:nth-child(2) {
@@ -274,6 +271,14 @@ li {
   width: 100%;
 }
 
+.team {
+  background-image: url(../images/TEAM\ MEMBERS.png);
+}
+
+.teamImg {
+  width: 260px;
+  height: 260px;
+}
 
 
 /* scroll to top */
@@ -294,6 +299,10 @@ li {
 
 .up.show {
   right: 20px;
+}
+
+.stats {
+  border: 1px solid;
 }
 
 /* scroll bar */
