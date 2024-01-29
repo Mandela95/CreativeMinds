@@ -280,7 +280,6 @@ li {
   height: 260px;
 }
 
-
 /* scroll to top */
 
 .up {
@@ -299,10 +298,6 @@ li {
 
 .up.show {
   right: 20px;
-}
-
-.stats {
-  border: 1px solid;
 }
 
 /* scroll bar */
